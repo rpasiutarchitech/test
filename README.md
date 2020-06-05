@@ -1,8 +1,11 @@
-nx build testicann
-ng serve testicann
+commands to try:
 
-nx affected:build
-nx affected:test
-nx affected:e2e
+* nx build
+* nx serve
+* nx e2e
 
-nx dep-graph
+* nx affected:build
+* nx affected:test
+* nx affected:e2e
+
+* nx dep-graph
