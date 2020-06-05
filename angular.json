@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "projects": {
+    "testicann": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/testicann",
+      "sourceRoot": "apps/testicann/src",
+      "prefix": "icann-test",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/testicann",
+            "index": "apps/testicann/src/index.html",
+            "main": "apps/testicann/src/main.ts",
+            "polyfills": "apps/testicann/src/polyfills.ts",
+            "tsConfig": "apps/testicann/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/testicann/src/favicon.ico",
+              "apps/testicann/src/assets"
+            ],
+            "styles": ["apps/testicann/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/testicann/src/environments/environment.ts",
+                  "with": "apps/testicann/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "testicann:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "testicann:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "testicann:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/testicann/tsconfig.app.json",
+              "apps/testicann/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/testicann/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/testicann/jest.config.js",
+            "tsConfig": "apps/testicann/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/testicann/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "testicann-e2e": {
+      "root": "apps/testicann-e2e",
+      "sourceRoot": "apps/testicann-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/testicann-e2e/cypress.json",
+            "tsConfig": "apps/testicann-e2e/tsconfig.e2e.json",
+            "devServerTarget": "testicann:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "testicann:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/testicann-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/testicann-e2e/**"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "testicann"
+}
