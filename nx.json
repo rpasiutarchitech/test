@@ -64,6 +64,9 @@
     },
     "web-icann-test4-featuretest4": {
       "tags": []
+    },
+    "web-icann-test10-featuretest10": {
+      "tags": []
     }
   }
 }

@@ -566,6 +566,53 @@
           "style": "scss"
         }
       }
+    },
+    "web-icann-test10-featuretest10": {
+      "projectType": "library",
+      "root": "libs/web-icann/test10/featuretest10",
+      "sourceRoot": "libs/web-icann/test10/featuretest10/src",
+      "prefix": "icann-test",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/web-icann/test10/featuretest10/tsconfig.lib.json",
+            "project": "libs/web-icann/test10/featuretest10/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/web-icann/test10/featuretest10/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/web-icann/test10/featuretest10/tsconfig.lib.json",
+              "libs/web-icann/test10/featuretest10/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/web-icann/test10/featuretest10/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/web-icann/test10/featuretest10/jest.config.js",
+            "tsConfig": "libs/web-icann/test10/featuretest10/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/web-icann/test10/featuretest10/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

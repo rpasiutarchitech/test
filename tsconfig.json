@@ -54,6 +54,9 @@
       ],
       "@icann-test/web-icann/test4/featuretest4": [
         "libs/web-icann/test4/featuretest4/src/index.ts"
+      ],
+      "@icann-test/web-icann/test10/featuretest10": [
+        "libs/web-icann/test10/featuretest10/src/index.ts"
       ]
     }
   },

@@ -30,6 +30,10 @@ const routes: Routes = [
     loadChildren: () => import('@icann-test/web-icann/test4/shell').then(m => m.WebIcannTest4ShellModule)
   },
   {
+    path: 'test10',
+    loadChildren: () => import('@icann-test/web-icann/test10/featuretest10').then(m => m.WebIcannTest10Featuretest10Module)
+  },
+  {
     path: '',
     redirectTo: 'data-protection',
     pathMatch: 'full'
