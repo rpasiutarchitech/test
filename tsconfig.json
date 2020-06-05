@@ -15,7 +15,47 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@icann-test/web-icann/accountability-mechanisms/shell": [
+        "libs/web-icann/accountability-mechanisms/shell/src/index.ts"
+      ],
+      "@icann-test/web-icann/accountability-mechanisms/feature-annual-reports": [
+        "libs/web-icann/accountability-mechanisms/feature-annual-reports/src/index.ts"
+      ],
+      "@icann-test/web-icann/accountability-mechanisms/feature-accountability-index": [
+        "libs/web-icann/accountability-mechanisms/feature-accountability-index/src/index.ts"
+      ],
+      "@icann-test/web-icann/data-protection/shell": [
+        "libs/web-icann/data-protection/shell/src/index.ts"
+      ],
+      "@icann-test/web-icann/data-protection/feature-data-protection": [
+        "libs/web-icann/data-protection/feature-data-protection/src/index.ts"
+      ],
+      "@icann-test/web-icann/test1/shell": [
+        "libs/web-icann/test1/shell/src/index.ts"
+      ],
+      "@icann-test/web-icann/test2/shell": [
+        "libs/web-icann/test2/shell/src/index.ts"
+      ],
+      "@icann-test/web-icann/test3/shell": [
+        "libs/web-icann/test3/shell/src/index.ts"
+      ],
+      "@icann-test/web-icann/test4/shell": [
+        "libs/web-icann/test4/shell/src/index.ts"
+      ],
+      "@icann-test/web-icann/test1/featuretest1": [
+        "libs/web-icann/test1/featuretest1/src/index.ts"
+      ],
+      "@icann-test/web-icann/test2/featuretest2": [
+        "libs/web-icann/test2/featuretest2/src/index.ts"
+      ],
+      "@icann-test/web-icann/test3/featuretest3": [
+        "libs/web-icann/test3/featuretest3/src/index.ts"
+      ],
+      "@icann-test/web-icann/test4/featuretest4": [
+        "libs/web-icann/test4/featuretest4/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
