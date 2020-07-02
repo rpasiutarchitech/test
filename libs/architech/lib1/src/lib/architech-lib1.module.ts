@@ -15,6 +15,13 @@ import { Lib1Container10Component } from './containers/lib1-container10/lib1-con
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
+import { Lib1Component1Component } from './components/lib1-component1/lib1-component1.component';
 
 const routes: Routes = [
   {
@@ -75,7 +82,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes), MatIconModule, MatDividerModule, MatButtonModule],
-  declarations: [Lib1Container1Component, Lib1Container2Component, Lib1ParentContainerComponent, Lib1Container3Component, Lib1Container4Component, Lib1Container5Component, Lib1Container6Component, Lib1Container7Component, Lib1Container8Component, Lib1Container9Component, Lib1Container10Component],
+  imports: [CommonModule, RouterModule.forChild(routes), MatIconModule, MatDividerModule, MatButtonModule, MatCardModule, MatExpansionModule, MatFormFieldModule, MatInputModule, MatListModule, MatTabsModule],
+  declarations: [Lib1Container1Component, Lib1Container2Component, Lib1ParentContainerComponent, Lib1Container3Component, Lib1Container4Component, Lib1Container5Component, Lib1Container6Component, Lib1Container7Component, Lib1Container8Component, Lib1Container9Component, Lib1Container10Component, Lib1Component1Component]
 })
 export class ArchitechLib1Module {}

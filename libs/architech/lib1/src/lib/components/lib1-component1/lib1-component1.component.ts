@@ -1,16 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface Section {
-  name: string;
-  updated: Date;
-}
+import { Section } from '../../containers/lib1-container4/lib1-container4.component';
 
 @Component({
-  selector: 'icann-test-lib1-container4',
-  templateUrl: './lib1-container4.component.html',
-  styleUrls: ['./lib1-container4.component.scss']
+  selector: 'icann-test-lib1-component1',
+  templateUrl: './lib1-component1.component.html',
+  styleUrls: ['./lib1-component1.component.scss']
 })
-export class Lib1Container4Component implements OnInit {
+export class Lib1Component1Component implements OnInit {
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    this.step++;
+  }
+
+  prevStep() {
+    this.step--;
+  }
+
   folders: Section[] = [
     {
       name: 'Photos',
@@ -36,7 +46,8 @@ export class Lib1Container4Component implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
