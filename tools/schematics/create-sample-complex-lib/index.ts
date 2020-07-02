@@ -14,7 +14,7 @@ import { getProjectConfig } from '@nrwl/workspace';
 import { strings } from '@angular-devkit/core';
 
 function generateLibrary(schema: any): Rule {
-  return externalSchematic('@nrwl/workspace', 'lib', {
+  return externalSchematic('@nrwl/angular', 'lib', {
     name: schema.name,
     directory: 'architech'
   });

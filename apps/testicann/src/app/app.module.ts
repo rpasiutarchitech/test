@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'lib2',
     loadChildren: () => import('@icann-test/architech/lib2').then(m => m.ArchitechLib2Module)
   },
+  {
+    path: 'lib3',
+    loadChildren: () => import('@icann-test/architech/lib3').then(m => m.ArchitechLib3Module)
+  }
 
   // {
   //   path: 'data-protection',
