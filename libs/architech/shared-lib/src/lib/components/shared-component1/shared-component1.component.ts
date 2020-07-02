@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Section } from '../../containers/lib1-container4/lib1-container4.component';
+import { Section } from '../../../../../lib1/src/lib/containers/lib1-container4/lib1-container4.component';
 
 @Component({
-  selector: 'icann-test-lib1-component1',
-  templateUrl: './lib1-component1.component.html',
-  styleUrls: ['./lib1-component1.component.scss']
+  selector: 'icann-test-shared-component1',
+  templateUrl: './shared-component1.component.html',
+  styleUrls: ['./shared-component1.component.scss']
 })
-export class Lib1Component1Component implements OnInit {
+export class SharedComponent1Component implements OnInit {
   step = 0;
   folders: Section[] = [
     {
@@ -44,8 +44,6 @@ export class Lib1Component1Component implements OnInit {
   prevStep() {
     this.step--;
   }
-
-
 
   constructor() {
   }

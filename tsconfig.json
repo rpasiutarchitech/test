@@ -58,7 +58,12 @@
       "@icann-test/web-icann/test10/featuretest10": [
         "libs/web-icann/test10/featuretest10/src/index.ts"
       ],
-      "@icann-test/architech/lib1": ["libs/architech/lib1/src/index.ts"]
+      "@icann-test/architech/lib1": [
+        "libs/architech/lib1/src/index.ts"
+      ],
+      "@icann-test/architech/shared-lib": [
+        "libs/architech/shared-lib/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
