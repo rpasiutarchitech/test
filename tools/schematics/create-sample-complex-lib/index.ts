@@ -1,5 +1,17 @@
-import { apply, chain, externalSchematic, mergeWith, move, Rule, SchematicContext, Tree, url } from '@angular-devkit/schematics';
+import {
+  apply,
+  applyTemplates,
+  chain,
+  externalSchematic,
+  mergeWith,
+  move,
+  Rule,
+  SchematicContext,
+  Tree,
+  url
+} from '@angular-devkit/schematics';
 import { getProjectConfig } from '@nrwl/workspace';
+import { strings } from '@angular-devkit/core';
 
 function generateLibrary(schema: any): Rule {
   return externalSchematic('@nrwl/workspace', 'lib', {
@@ -13,6 +25,11 @@ function generateFiles(schema: any): Rule {
     context.logger.info('adding NOTES.md to lib');
 
     const templateSource = apply(url('./files'), [
+      applyTemplates({
+        classify: strings.classify,
+        dasherize: strings.dasherize,
+        name: schema.name
+      }),
       move(getProjectConfig(tree, `architech-${schema.name}`).root)
     ]);
 
