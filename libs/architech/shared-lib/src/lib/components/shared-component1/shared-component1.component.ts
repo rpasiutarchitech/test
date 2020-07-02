@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Section } from '../../../../../lib1/src/lib/containers/lib1-container4/lib1-container4.component';
 
 @Component({
   selector: 'icann-test-shared-component1',
@@ -8,7 +7,7 @@ import { Section } from '../../../../../lib1/src/lib/containers/lib1-container4/
 })
 export class SharedComponent1Component implements OnInit {
   step = 0;
-  folders: Section[] = [
+  folders: any[] = [
     {
       name: 'Photos',
       updated: new Date('1/1/16')
@@ -22,7 +21,7 @@ export class SharedComponent1Component implements OnInit {
       updated: new Date('1/28/16')
     }
   ];
-  notes: Section[] = [
+  notes: any[] = [
     {
       name: 'Vacation Itinerary',
       updated: new Date('2/20/16')
