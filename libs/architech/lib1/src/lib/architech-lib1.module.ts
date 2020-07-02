@@ -12,6 +12,9 @@ import { Lib1Container7Component } from './containers/lib1-container7/lib1-conta
 import { Lib1Container8Component } from './containers/lib1-container8/lib1-container8.component';
 import { Lib1Container9Component } from './containers/lib1-container9/lib1-container9.component';
 import { Lib1Container10Component } from './containers/lib1-container10/lib1-container10.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
 
 const routes: Routes = [
   {
@@ -72,7 +75,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, RouterModule.forChild(routes), MatIconModule, MatDividerModule, MatButtonModule],
   declarations: [Lib1Container1Component, Lib1Container2Component, Lib1ParentContainerComponent, Lib1Container3Component, Lib1Container4Component, Lib1Container5Component, Lib1Container6Component, Lib1Container7Component, Lib1Container8Component, Lib1Container9Component, Lib1Container10Component],
 })
 export class ArchitechLib1Module {}

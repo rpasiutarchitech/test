@@ -25,7 +25,10 @@
               "apps/testicann/src/favicon.ico",
               "apps/testicann/src/assets"
             ],
-            "styles": ["apps/testicann/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/testicann/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +86,10 @@
               "apps/testicann/tsconfig.app.json",
               "apps/testicann/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/testicann/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/testicann/**"
+            ]
           }
         },
         "test": {
@@ -118,8 +124,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/testicann-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/testicann-e2e/**"]
+            "tsConfig": [
+              "apps/testicann-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/testicann-e2e/**"
+            ]
           }
         }
       }
@@ -312,7 +323,10 @@
               "libs/web-icann/test1/shell/tsconfig.lib.json",
               "libs/web-icann/test1/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/web-icann/test1/shell/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/web-icann/test1/shell/**"
+            ]
           }
         },
         "test": {
@@ -344,7 +358,10 @@
               "libs/web-icann/test2/shell/tsconfig.lib.json",
               "libs/web-icann/test2/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/web-icann/test2/shell/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/web-icann/test2/shell/**"
+            ]
           }
         },
         "test": {
@@ -376,7 +393,10 @@
               "libs/web-icann/test3/shell/tsconfig.lib.json",
               "libs/web-icann/test3/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/web-icann/test3/shell/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/web-icann/test3/shell/**"
+            ]
           }
         },
         "test": {
@@ -408,7 +428,10 @@
               "libs/web-icann/test4/shell/tsconfig.lib.json",
               "libs/web-icann/test4/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/web-icann/test4/shell/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/web-icann/test4/shell/**"
+            ]
           }
         },
         "test": {
@@ -627,7 +650,10 @@
               "libs/architech/lib1/tsconfig.lib.json",
               "libs/architech/lib1/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/architech/lib1/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/architech/lib1/**"
+            ]
           }
         },
         "test": {
