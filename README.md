@@ -9,3 +9,6 @@ commands to try:
 * nx affected:e2e
 
 * nx dep-graph
+
+
+nx g lib lib1 --directory architech
