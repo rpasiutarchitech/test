@@ -3,17 +3,17 @@ import { getProjectConfig } from '@nrwl/workspace';
 
 function generateLibrary(schema: any): Rule {
   return externalSchematic('@nrwl/workspace', 'lib', {
-    name: schema.name
+    name: schema.name,
+    directory: 'architech'
   });
 }
 
 function generateFiles(schema: any): Rule {
   return (tree: Tree, context: SchematicContext) => {
     context.logger.info('adding NOTES.md to lib');
-    context.logger.info(getProjectConfig(tree, `${schema.name}`).root);
 
     const templateSource = apply(url('./files'), [
-      move(getProjectConfig(tree, `${schema.name}`).root)
+      move(getProjectConfig(tree, `architech-${schema.name}`).root)
     ]);
 
     return chain([mergeWith(templateSource)])(tree, context);
