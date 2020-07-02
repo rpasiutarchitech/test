@@ -1,0 +1,89 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { <%= classify(name) %>Container1Component } from './containers/<%= dasherize(name) %>-container1/<%= dasherize(name) %>-container1.component';
+import { <%= classify(name) %>Container2Component } from './containers/<%= dasherize(name) %>-container2/<%= dasherize(name) %>-container2.component';
+import { <%= classify(name) %>ParentContainerComponent } from './containers/<%= dasherize(name) %>-parent-container/<%= dasherize(name) %>-parent-container.component';
+import { <%= classify(name) %>Container3Component } from './containers/<%= dasherize(name) %>-container3/<%= dasherize(name) %>-container3.component';
+import { <%= classify(name) %>Container4Component } from './containers/<%= dasherize(name) %>-container4/<%= dasherize(name) %>-container4.component';
+import { <%= classify(name) %>Container5Component } from './containers/<%= dasherize(name) %>-container5/<%= dasherize(name) %>-container5.component';
+import { <%= classify(name) %>Container6Component } from './containers/<%= dasherize(name) %>-container6/<%= dasherize(name) %>-container6.component';
+import { <%= classify(name) %>Container7Component } from './containers/<%= dasherize(name) %>-container7/<%= dasherize(name) %>-container7.component';
+import { <%= classify(name) %>Container8Component } from './containers/<%= dasherize(name) %>-container8/<%= dasherize(name) %>-container8.component';
+import { <%= classify(name) %>Container9Component } from './containers/<%= dasherize(name) %>-container9/<%= dasherize(name) %>-container9.component';
+import { <%= classify(name) %>Container10Component } from './containers/<%= dasherize(name) %>-container10/<%= dasherize(name) %>-container10.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
+import { <%= classify(name) %>Component1Component } from './components/<%= dasherize(name) %>-component1/<%= dasherize(name) %>-component1.component';
+import { ArchitechSharedLibModule } from '@icann-test/architech/shared-lib';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: <%= classify(name) %>ParentContainerComponent,
+    children: [
+      {
+        path: 'container1',
+        component: <%= classify(name) %>Container1Component,
+      },
+      {
+        path: 'container2',
+        component: <%= classify(name) %>Container2Component,
+      },
+      {
+        path: 'container3',
+        component: <%= classify(name) %>Container3Component,
+      },
+      {
+        path: 'container4',
+        component: <%= classify(name) %>Container4Component,
+      },
+      {
+        path: 'container5',
+        component: <%= classify(name) %>Container5Component,
+      },
+      {
+        path: 'container6',
+        component: <%= classify(name) %>Container6Component,
+      },
+      {
+        path: 'container7',
+        component: <%= classify(name) %>Container7Component,
+      },
+      {
+        path: 'container8',
+        component: <%= classify(name) %>Container8Component,
+      },
+      {
+        path: 'container9',
+        component: <%= classify(name) %>Container9Component,
+      },
+      {
+        path: 'container10',
+        component: <%= classify(name) %>Container10Component,
+      },
+      {
+        path: '',
+        redirectTo: 'container1',
+        pathMatch: 'full'
+      },
+      {
+        path: '**',
+        redirectTo: 'container1'
+      }
+    ]
+  }
+];
+
+@NgModule({
+  imports: [CommonModule, RouterModule.forChild(routes), ArchitechSharedLibModule, MatIconModule, MatDividerModule, MatButtonModule, MatCardModule, MatExpansionModule, MatFormFieldModule, MatInputModule, MatListModule, MatTabsModule],
+  declarations: [<%= classify(name) %>Container1Component, <%= classify(name) %>Container2Component, <%= classify(name) %>ParentContainerComponent, <%= classify(name) %>Container3Component, <%= classify(name) %>Container4Component, <%= classify(name) %>Container5Component, <%= classify(name) %>Container6Component, <%= classify(name) %>Container7Component, <%= classify(name) %>Container8Component, <%= classify(name) %>Container9Component, <%= classify(name) %>Container10Component, <%= classify(name) %>Component1Component]
+})
+export class Architech<%= classify(name) %>Module {}
