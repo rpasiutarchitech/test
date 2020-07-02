@@ -12,3 +12,4 @@ commands to try:
 
 
 nx g lib lib1 --directory architech
+nx workspace-schematic create-sample-complex-lib libName
