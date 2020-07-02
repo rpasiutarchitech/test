@@ -10,13 +10,37 @@ const routes: Routes = [
     path: 'lib1',
     loadChildren: () => import('@icann-test/architech/lib1').then(m => m.ArchitechLib1Module)
   },
-  // {
-  //   path: 'lib2',
-  //   loadChildren: () => import('@icann-test/architech/lib2').then(m => m.ArchitechLib2Module)
-  // },
+  {
+    path: 'lib2',
+    loadChildren: () => import('@icann-test/architech/lib2').then(m => m.ArchitechLib2Module)
+  },
   {
     path: 'lib3',
     loadChildren: () => import('@icann-test/architech/lib3').then(m => m.ArchitechLib3Module)
+  },
+  {
+    path: 'lib4',
+    loadChildren: () => import('@icann-test/architech/lib4').then(m => m.ArchitechLib4Module)
+  },
+  {
+    path: 'lib5',
+    loadChildren: () => import('@icann-test/architech/lib5').then(m => m.ArchitechLib5Module)
+  },
+  {
+    path: 'lib6',
+    loadChildren: () => import('@icann-test/architech/lib6').then(m => m.ArchitechLib6Module)
+  },
+  {
+    path: 'lib7',
+    loadChildren: () => import('@icann-test/architech/lib7').then(m => m.ArchitechLib7Module)
+  },
+  {
+    path: 'lib8',
+    loadChildren: () => import('@icann-test/architech/lib8').then(m => m.ArchitechLib8Module)
+  },
+  {
+    path: 'lib9',
+    loadChildren: () => import('@icann-test/architech/lib9').then(m => m.ArchitechLib9Module)
   }
 
   // {

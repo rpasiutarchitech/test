@@ -86,10 +86,7 @@
               "apps/testicann/tsconfig.app.json",
               "apps/testicann/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/testicann/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/testicann/**"]
           }
         },
         "test": {
@@ -124,13 +121,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/testicann-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/testicann-e2e/**"
-            ]
+            "tsConfig": ["apps/testicann-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/testicann-e2e/**"]
           }
         }
       }
@@ -323,10 +315,7 @@
               "libs/web-icann/test1/shell/tsconfig.lib.json",
               "libs/web-icann/test1/shell/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/web-icann/test1/shell/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/web-icann/test1/shell/**"]
           }
         },
         "test": {
@@ -358,10 +347,7 @@
               "libs/web-icann/test2/shell/tsconfig.lib.json",
               "libs/web-icann/test2/shell/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/web-icann/test2/shell/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/web-icann/test2/shell/**"]
           }
         },
         "test": {
@@ -393,10 +379,7 @@
               "libs/web-icann/test3/shell/tsconfig.lib.json",
               "libs/web-icann/test3/shell/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/web-icann/test3/shell/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/web-icann/test3/shell/**"]
           }
         },
         "test": {
@@ -428,10 +411,7 @@
               "libs/web-icann/test4/shell/tsconfig.lib.json",
               "libs/web-icann/test4/shell/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/web-icann/test4/shell/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/web-icann/test4/shell/**"]
           }
         },
         "test": {
@@ -650,10 +630,7 @@
               "libs/architech/lib1/tsconfig.lib.json",
               "libs/architech/lib1/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/architech/lib1/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/architech/lib1/**"]
           }
         },
         "test": {
@@ -685,10 +662,7 @@
               "libs/architech/shared-lib/tsconfig.lib.json",
               "libs/architech/shared-lib/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/architech/shared-lib/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/architech/shared-lib/**"]
           }
         },
         "test": {
@@ -720,10 +694,7 @@
               "libs/architech/lib3/tsconfig.lib.json",
               "libs/architech/lib3/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/architech/lib3/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/architech/lib3/**"]
           }
         },
         "test": {
@@ -733,6 +704,230 @@
             "tsConfig": "libs/architech/lib3/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/architech/lib3/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "architech-lib2": {
+      "projectType": "library",
+      "root": "libs/architech/lib2",
+      "sourceRoot": "libs/architech/lib2/src",
+      "prefix": "icann-test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/lib2/tsconfig.lib.json",
+              "libs/architech/lib2/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/architech/lib2/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/lib2/jest.config.js",
+            "tsConfig": "libs/architech/lib2/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/lib2/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "architech-lib4": {
+      "projectType": "library",
+      "root": "libs/architech/lib4",
+      "sourceRoot": "libs/architech/lib4/src",
+      "prefix": "icann-test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/lib4/tsconfig.lib.json",
+              "libs/architech/lib4/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/architech/lib4/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/lib4/jest.config.js",
+            "tsConfig": "libs/architech/lib4/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/lib4/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "architech-lib5": {
+      "projectType": "library",
+      "root": "libs/architech/lib5",
+      "sourceRoot": "libs/architech/lib5/src",
+      "prefix": "icann-test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/lib5/tsconfig.lib.json",
+              "libs/architech/lib5/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/architech/lib5/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/lib5/jest.config.js",
+            "tsConfig": "libs/architech/lib5/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/lib5/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "architech-lib6": {
+      "projectType": "library",
+      "root": "libs/architech/lib6",
+      "sourceRoot": "libs/architech/lib6/src",
+      "prefix": "icann-test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/lib6/tsconfig.lib.json",
+              "libs/architech/lib6/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/architech/lib6/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/lib6/jest.config.js",
+            "tsConfig": "libs/architech/lib6/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/lib6/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "architech-lib7": {
+      "projectType": "library",
+      "root": "libs/architech/lib7",
+      "sourceRoot": "libs/architech/lib7/src",
+      "prefix": "icann-test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/lib7/tsconfig.lib.json",
+              "libs/architech/lib7/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/architech/lib7/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/lib7/jest.config.js",
+            "tsConfig": "libs/architech/lib7/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/lib7/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "architech-lib8": {
+      "projectType": "library",
+      "root": "libs/architech/lib8",
+      "sourceRoot": "libs/architech/lib8/src",
+      "prefix": "icann-test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/lib8/tsconfig.lib.json",
+              "libs/architech/lib8/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/architech/lib8/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/lib8/jest.config.js",
+            "tsConfig": "libs/architech/lib8/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/lib8/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "architech-lib9": {
+      "projectType": "library",
+      "root": "libs/architech/lib9",
+      "sourceRoot": "libs/architech/lib9/src",
+      "prefix": "icann-test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/lib9/tsconfig.lib.json",
+              "libs/architech/lib9/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/architech/lib9/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/lib9/jest.config.js",
+            "tsConfig": "libs/architech/lib9/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/lib9/src/test-setup.ts"
           }
         }
       },

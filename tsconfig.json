@@ -58,15 +58,18 @@
       "@icann-test/web-icann/test10/featuretest10": [
         "libs/web-icann/test10/featuretest10/src/index.ts"
       ],
-      "@icann-test/architech/lib1": [
-        "libs/architech/lib1/src/index.ts"
-      ],
+      "@icann-test/architech/lib1": ["libs/architech/lib1/src/index.ts"],
       "@icann-test/architech/shared-lib": [
         "libs/architech/shared-lib/src/index.ts"
       ],
-      "@icann-test/architech/lib3": [
-        "libs/architech/lib3/src/index.ts"
-      ]
+      "@icann-test/architech/lib3": ["libs/architech/lib3/src/index.ts"],
+      "@icann-test/architech/lib2": ["libs/architech/lib2/src/index.ts"],
+      "@icann-test/architech/lib4": ["libs/architech/lib4/src/index.ts"],
+      "@icann-test/architech/lib5": ["libs/architech/lib5/src/index.ts"],
+      "@icann-test/architech/lib6": ["libs/architech/lib6/src/index.ts"],
+      "@icann-test/architech/lib7": ["libs/architech/lib7/src/index.ts"],
+      "@icann-test/architech/lib8": ["libs/architech/lib8/src/index.ts"],
+      "@icann-test/architech/lib9": ["libs/architech/lib9/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
