@@ -1,4 +1,4 @@
-<p>lib1-component1 works!</p>
+<p><%= dasherize(name) %>-component1 works!</p>
 <section>
   <div class="example-label">Basic</div>
   <div class="example-button-row">

@@ -1,4 +1,4 @@
-<p>lib1-container2 works!</p>
+<p><%= dasherize(name) %>-container2 works!</p>
 <mat-card class="example-card">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>

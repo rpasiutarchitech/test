@@ -1,4 +1,4 @@
-<p>lib1-container5 works!</p>
+<p><%= dasherize(name) %>-container5 works!</p>
 <mat-tab-group mat-align-tabs="start">
   <mat-tab label="First">Content 1</mat-tab>
   <mat-tab label="Second">Content 2</mat-tab>

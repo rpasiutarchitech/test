@@ -1,4 +1,4 @@
-<p>lib1-parent-container works!</p>
+<p><%= dasherize(name) %>-parent-container works!</p>
 <a [routerLink]="['container1']">container1</a>
 <a [routerLink]="['container2']">container2</a>
 <a [routerLink]="['container3']">container3</a>

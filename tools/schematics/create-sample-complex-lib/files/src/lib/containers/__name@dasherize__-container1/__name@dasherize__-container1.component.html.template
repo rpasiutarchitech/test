@@ -1,4 +1,4 @@
-<p>lib1-container1 works!</p>
+<p><%= dasherize(name) %>-container1 works!</p>
 
 <section>
   <div class="example-label">Basic</div>

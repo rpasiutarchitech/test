@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'icann-test-lib1-container9',
-  templateUrl: './lib1-container9.component.html',
-  styleUrls: ['./lib1-container9.component.scss']
+  selector: 'icann-test-<%= dasherize(name) %>-container9',
+  templateUrl: './<%= dasherize(name) %>-container9.component.html',
+  styleUrls: ['./<%= dasherize(name) %>-container9.component.scss']
 })
-export class Lib1Container9Component implements OnInit {
+export class <%= classify(name) %>Container9Component implements OnInit {
 
   constructor() { }
 

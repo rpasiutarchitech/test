@@ -1,2 +1,2 @@
-<p>lib1-container10 works!</p>
-<icann-test-lib1-component1></icann-test-lib1-component1>
+<p><%= dasherize(name) %>-container10 works!</p>
+<icann-test-<%= dasherize(name) %>-component1></icann-test-<%= dasherize(name) %>-component1>

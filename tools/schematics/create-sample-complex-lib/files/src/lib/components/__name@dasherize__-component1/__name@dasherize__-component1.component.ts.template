@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Section } from '../../containers/lib1-container4/lib1-container4.component';
+import { Section } from '../../containers/<%= dasherize(name) %>-container4/<%= dasherize(name) %>-container4.component';
 
 @Component({
-  selector: 'icann-test-lib1-component1',
-  templateUrl: './lib1-component1.component.html',
-  styleUrls: ['./lib1-component1.component.scss']
+  selector: 'icann-test-<%= dasherize(name) %>-component1',
+  templateUrl: './<%= dasherize(name) %>-component1.component.html',
+  styleUrls: ['./<%= dasherize(name) %>-component1.component.scss']
 })
-export class Lib1Component1Component implements OnInit {
+export class <%= classify(name) %>Component1Component implements OnInit {
   step = 0;
   folders: Section[] = [
     {

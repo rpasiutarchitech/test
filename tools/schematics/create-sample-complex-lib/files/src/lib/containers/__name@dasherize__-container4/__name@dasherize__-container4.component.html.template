@@ -1,4 +1,4 @@
-<p>lib1-container4 works!</p>
+<p><%= dasherize(name) %>-container4 works!</p>
 <mat-list>
   <div mat-subheader>Folders</div>
   <mat-list-item *ngFor="let folder of folders">
