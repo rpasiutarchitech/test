@@ -10,10 +10,10 @@ const routes: Routes = [
     path: 'lib1',
     loadChildren: () => import('@icann-test/architech/lib1').then(m => m.ArchitechLib1Module)
   },
-  {
-    path: 'lib2',
-    loadChildren: () => import('@icann-test/architech/lib2').then(m => m.ArchitechLib2Module)
-  },
+  // {
+  //   path: 'lib2',
+  //   loadChildren: () => import('@icann-test/architech/lib2').then(m => m.ArchitechLib2Module)
+  // },
   {
     path: 'lib3',
     loadChildren: () => import('@icann-test/architech/lib3').then(m => m.ArchitechLib3Module)

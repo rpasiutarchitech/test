@@ -707,41 +707,6 @@
         }
       }
     },
-    "architech-lib2": {
-      "projectType": "library",
-      "root": "libs/architech/lib2",
-      "sourceRoot": "libs/architech/lib2/src",
-      "prefix": "icann-test",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/architech/lib2/tsconfig.lib.json",
-              "libs/architech/lib2/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/architech/lib2/**"
-            ]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/architech/lib2/jest.config.js",
-            "tsConfig": "libs/architech/lib2/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "libs/architech/lib2/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
-      }
-    },
     "architech-lib3": {
       "projectType": "library",
       "root": "libs/architech/lib3",
