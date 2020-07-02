@@ -63,6 +63,9 @@
       ],
       "@icann-test/architech/shared-lib": [
         "libs/architech/shared-lib/src/index.ts"
+      ],
+      "@icann-test/architech/lib2": [
+        "libs/architech/lib2/src/index.ts"
       ]
     }
   },
