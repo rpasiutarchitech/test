@@ -16,7 +16,8 @@ import { strings } from '@angular-devkit/core';
 function generateLibrary(schema: any): Rule {
   return externalSchematic('@nrwl/angular', 'lib', {
     name: schema.name,
-    directory: 'architech'
+    directory: 'architech',
+    publishable: true
   });
 }
 

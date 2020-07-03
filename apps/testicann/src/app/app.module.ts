@@ -125,6 +125,10 @@ const routes: Routes = [
   {
     path: 'lib30',
     loadChildren: () => import('@icann-test/architech/lib30').then(m => m.ArchitechLib30Module)
+  },
+  {
+    path: 'publishablelib1',
+    loadChildren: () => import('@icann-test/architech/publishablelib1').then(m => m.ArchitechPublishablelib1Module)
   }
 
   // {

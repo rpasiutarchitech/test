@@ -1608,6 +1608,53 @@
           "style": "scss"
         }
       }
+    },
+    "architech-publishablelib1": {
+      "projectType": "library",
+      "root": "libs/architech/publishablelib1",
+      "sourceRoot": "libs/architech/publishablelib1/src",
+      "prefix": "icann-test",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/architech/publishablelib1/tsconfig.lib.json",
+            "project": "libs/architech/publishablelib1/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/architech/publishablelib1/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/architech/publishablelib1/tsconfig.lib.json",
+              "libs/architech/publishablelib1/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/architech/publishablelib1/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/architech/publishablelib1/jest.config.js",
+            "tsConfig": "libs/architech/publishablelib1/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/architech/publishablelib1/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

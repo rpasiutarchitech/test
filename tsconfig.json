@@ -90,7 +90,10 @@
       "@icann-test/architech/lib27": ["libs/architech/lib27/src/index.ts"],
       "@icann-test/architech/lib28": ["libs/architech/lib28/src/index.ts"],
       "@icann-test/architech/lib29": ["libs/architech/lib29/src/index.ts"],
-      "@icann-test/architech/lib30": ["libs/architech/lib30/src/index.ts"]
+      "@icann-test/architech/lib30": ["libs/architech/lib30/src/index.ts"],
+      "@icann-test/architech/publishablelib1": [
+        "libs/architech/publishablelib1/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
