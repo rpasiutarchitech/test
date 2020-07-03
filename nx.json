@@ -26,48 +26,6 @@
       "tags": [],
       "implicitDependencies": ["testicann"]
     },
-    "web-icann-accountability-mechanisms-shell": {
-      "tags": []
-    },
-    "web-icann-accountability-mechanisms-feature-annual-reports": {
-      "tags": []
-    },
-    "web-icann-accountability-mechanisms-feature-accountability-index": {
-      "tags": []
-    },
-    "web-icann-data-protection-shell": {
-      "tags": []
-    },
-    "web-icann-data-protection-feature-data-protection": {
-      "tags": []
-    },
-    "web-icann-test1-shell": {
-      "tags": []
-    },
-    "web-icann-test2-shell": {
-      "tags": []
-    },
-    "web-icann-test3-shell": {
-      "tags": []
-    },
-    "web-icann-test4-shell": {
-      "tags": []
-    },
-    "web-icann-test1-featuretest1": {
-      "tags": []
-    },
-    "web-icann-test2-featuretest2": {
-      "tags": []
-    },
-    "web-icann-test3-featuretest3": {
-      "tags": []
-    },
-    "web-icann-test4-featuretest4": {
-      "tags": []
-    },
-    "web-icann-test10-featuretest10": {
-      "tags": []
-    },
     "architech-lib1": {
       "tags": []
     },
