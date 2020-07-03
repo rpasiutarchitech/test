@@ -1,15 +1,11 @@
-commands to try:
+### byild app
+nx build testicann --prod
 
-* nx build
-* nx serve
-* nx e2e
+### show dependency graph
+nx dep-graph
 
-* nx affected:build
-* nx affected:test
-* nx affected:e2e
-
-* nx dep-graph
-
-
-nx g lib lib1 --directory architech
+### generate new module using schematics
 nx workspace-schematic create-sample-complex-lib libName
+
+### generate bundle report using webpack-bundle-analyzer
+npm run bundle-report
